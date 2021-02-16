@@ -11,7 +11,7 @@ var listArray:[ListData] = makeData()
 
 
 struct ListData: Identifiable {
-    var id:Int
+    var id = UUID()
     var title:String
     var count:Int
     
@@ -19,11 +19,12 @@ struct ListData: Identifiable {
 
 func makeData() -> [ListData] {
     var dataArray:[ListData] = []
-    dataArray.append(ListData(id:1, title:"起床",count: 1))
-    dataArray.append(ListData(id:2, title:"朝食",count: 3))
-    dataArray.append(ListData(id:3, title:"昼食",count: 14))
-    dataArray.append(ListData(id:4, title:"夕食",count: 13))
-    dataArray.append(ListData(id:5, title:"就寝",count: 9))
+    dataArray.append(ListData(title:"1個目の習慣",count: 1))
+    dataArray.append(ListData(title:"2個目の習慣",count: 2))
+    dataArray.append(ListData(title:"3個目の習慣",count: 3))
+    dataArray.append(ListData(title:"4個目の習慣",count: 4))
+    dataArray.append(ListData(title:"5個目の習慣",count: 5))
+    dataArray.append(ListData(title:"6個目の習慣",count: 6))
     
     return dataArray
 }
