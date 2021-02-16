@@ -43,6 +43,7 @@ struct ContentView: View {
                                     Text(habit.title)
                                     Text("\(habit.count)/30")
                                 }
+                                
                             })
                             
                     
