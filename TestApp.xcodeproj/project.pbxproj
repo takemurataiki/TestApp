@@ -13,6 +13,7 @@
 		2336198025DB59AB006C25E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2336197F25DB59AB006C25E3 /* Preview Assets.xcassets */; };
 		2336198A25DB5A6D006C25E3 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336198925DB5A6D006C25E3 /* SubView.swift */; };
 		2336199225DB74B5006C25E3 /* HabitsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336199125DB74B5006C25E3 /* HabitsData.swift */; };
+		2336199A25DCCE05006C25E3 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336199925DCCE05006C25E3 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2336198125DB59AB006C25E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2336198925DB5A6D006C25E3 /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
 		2336199125DB74B5006C25E3 /* HabitsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsData.swift; sourceTree = "<group>"; };
+		2336199925DCCE05006C25E3 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				2336197825DB59A8006C25E3 /* TestAppApp.swift */,
 				2336197A25DB59A8006C25E3 /* ContentView.swift */,
+				2336199925DCCE05006C25E3 /* AddView.swift */,
 				2336198925DB5A6D006C25E3 /* SubView.swift */,
 				2336199125DB74B5006C25E3 /* HabitsData.swift */,
 				2336197C25DB59AB006C25E3 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				2336199225DB74B5006C25E3 /* HabitsData.swift in Sources */,
 				2336198A25DB5A6D006C25E3 /* SubView.swift in Sources */,
 				2336197B25DB59A8006C25E3 /* ContentView.swift in Sources */,
+				2336199A25DCCE05006C25E3 /* AddView.swift in Sources */,
 				2336197925DB59A8006C25E3 /* TestAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

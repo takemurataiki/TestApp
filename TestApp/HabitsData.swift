@@ -8,12 +8,21 @@
 import Foundation
 
 var listArray:[ListData] = makeData()
-
+var habitsArray:[HabitsData] = makeHabits()
 
 struct ListData: Identifiable {
     var id = UUID()
-    var title:String
-    var count:Int
+    var title:String = ""
+    var count:Int = 0
+    
+    
+}
+
+struct HabitsData: Identifiable {
+    var id = UUID()
+    var title:String = ""
+    var count:Int = 0
+    
     
 }
 
@@ -28,3 +37,52 @@ func makeData() -> [ListData] {
     
     return dataArray
 }
+
+func makeHabits() -> [HabitsData] {
+    var habitArray:[HabitsData] = []
+    
+    habitArray.append(HabitsData(title:"@1個目の習慣",count: 11))
+    habitArray.append(HabitsData(title:"@2個目の習慣",count: 22))
+    habitArray.append(HabitsData(title:"@3個目の習慣",count: 33))
+    habitArray.append(HabitsData(title:"@4個目の習慣",count: 44))
+    habitArray.append(HabitsData(title:"@5個目の習慣",count: 55))
+    
+    
+    return habitArray
+}
+
+class NewList: ObservableObject {
+    
+    
+    
+    @Published var titles: [String] = [] //タイトル
+    @Published var subTitles: [String] = [] // サブタイトル
+    @Published var newTitle = "" //テキスト初期化
+    
+    @Published var isShow: Bool = false
+    
+    func addHabitTitle() {
+        titles.append(newTitle)
+        newTitle = ""
+    }
+    
+    @Published var counts:[Int] = []
+    @Published var newCount = 0
+    
+    func addHabitCount() {
+        counts.append(newCount)
+        newCount = 0
+    }
+    
+    
+    @Published var habitsArray:[HabitsData] = makeHabits()
+    
+    
+    
+    
+    
+    
+
+    
+}
+

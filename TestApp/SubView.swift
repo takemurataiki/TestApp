@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct SubView: View {
-    @State var list:ListData
+    @Binding var list:HabitsData
+//    @Binding var bCount: Int
+    
+    
+//    @ObservedObject var newList = NewList()
+    @EnvironmentObject var newList: NewList
     var body: some View {
         VStack {
             Spacer()
             Text(list.title)
             
+            
             Spacer()
             
             Text(String(list.count))
+//            Text(String(bCount))
+            
            
             
             
@@ -24,7 +32,10 @@ struct SubView: View {
             
             
             Button(action:{
+                
                 list.count += 1
+//                    bCount += 1
+                
                 
                         
                     }) {
@@ -48,6 +59,9 @@ struct SubView: View {
 
 struct SubView_Previews: PreviewProvider {
     static var previews: some View {
-        SubView(list: listArray[0])
+        SubView(list: Binding.constant(habitsArray[0])
+//                , bCount: Binding.constant(2)
+        )
+            .environmentObject(NewList())
     }
 }
